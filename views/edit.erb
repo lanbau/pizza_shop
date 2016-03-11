@@ -1,0 +1,10 @@
+<h1>Edit Pizza</h1>
+<form class="form" id="edit_pizza" method="POST" action="/pizzas/<%= @pizza.id %>">
+  <input type="hidden" name="_method" value="patch">
+  <div>
+    <label for="pizza_name">Name:</label>
+    <!-- special syntax for activerecord to deconstruct -->
+    <input type="text" name="pizza[name]" id="pizza_name" value="<%= @pizza.name %>">
+  </div>
+  <input type="submit" value="Update Pizza" class="btn">
+</form>

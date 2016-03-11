@@ -1,0 +1,11 @@
+<!-- with equal we are outputing
+without we don't want to output -->
+<ul>
+  <% @pizzas.each do |pizza| %>
+    <li class="<%= pizza.style_class %>">
+      <a href="/pizzas/<%= pizza.id %>">
+        <%= pizza.nice_name %>
+      </a>
+    </li>
+  <% end %>
+</ul>

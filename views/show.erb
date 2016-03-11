@@ -1,0 +1,9 @@
+<h1><%= params.inspect %></h1>
+<h1><%= @pizza.name %></h1>
+
+<form class="form" id="delete_pizza" method="POST" action="/pizzas/<%= @pizza.id %>">
+  <input type="hidden" name="_method" value="delete">
+  <div>
+    <input type="submit" value="Delete Pizza" class="btn">
+  </div>
+</form>

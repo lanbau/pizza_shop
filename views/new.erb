@@ -1,0 +1,9 @@
+<h1>New Form</h1>
+<form class="form" id="add_pizza" method="post" action="/pizzas">
+  <div>
+    <label for="pizza_title">Name:</label>
+    <!-- special syntax for activerecord to deconstruct -->
+    <input type="text" name="pizza[name]" id="pizza_name">
+  </div>
+  <input type="submit" value="Add Pizza" class="btn">
+</form>
